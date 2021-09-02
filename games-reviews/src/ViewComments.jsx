@@ -1,25 +1,13 @@
+import './chosen-review.css';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Home = () => {
-  const [reviews, setReviews] = useState([]);
-  
-  useEffect(() => {
-    return fetch("https://nc-reviews-server.herokuapp.com/api/reviews")
-      .then((response) => response.json())
-      .then((data) => {
-        setReviews(data.reviews);
-      });
-  }, []);
-
+const ViewComments = () => {
   return (
-    <section className="list-section">
-      <p>Welcome To NC Reviews.</p>
-      {/* <select name="category" id="category-name">
-        <option></option>
-      </select> */}
+    <div className="comment-section">
+      <p>Comments</p>
 
-      <ul className="item-list">
+      {/* <ul className="item-list">
         {reviews.map((review) => {
           return (
             <li key={review.review_id} className="item">
@@ -36,9 +24,10 @@ const Home = () => {
             </li>
           );
         })}
-      </ul>
-    </section>
+      </ul> */}
+
+    </div>
   );
 };
 
-export default Home;
+export default ViewComments;

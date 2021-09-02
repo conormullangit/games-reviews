@@ -1,0 +1,45 @@
+.chosen-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 15vh 10vw;
+}
+
+.chosen-title {
+  background: white;
+}
+
+.single-item-image {
+  margin-top: 10px;
+  width: 80vw;
+  border-radius: 3px;
+  border: 5px solid antiquewhite;
+}
+
+.review-body {
+  background: white;
+  justify-content: center;
+}
+
+.bottom-bar {
+  background: black;
+  opacity: 1;
+  border: 2px solid red;
+  overflow: hidden;
+  position: fixed;
+  bottom: 5px;
+  width: 90%;
+}
+
+.nav-button {
+  opacity: ;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 15vh 10vw;
+}

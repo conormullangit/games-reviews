@@ -5,6 +5,8 @@ import Header from './Header';
 import DisplayBy from './DisplayBy';
 import Home from './Home';
 import Categories from './Categories';
+import ChosenReview from './ChosenReview';
+import ViewComments from "./ViewComments";
 
 function App() {
   return (
@@ -19,8 +21,14 @@ function App() {
           <Route exact path="/api/reviews">
             <Home></Home>
           </Route>
+          <Route exact path="/api/reviews/:review_id">
+            <ChosenReview></ChosenReview>
+          </Route>
           <Route exact path="/api/categories">
             <Categories></Categories>
+          </Route>
+          <Route exact path="/api/reviews/:review_id/comments">
+            <ViewComments></ViewComments>
           </Route>
       </div>
     </BrowserRouter>
