@@ -15,21 +15,24 @@ function App() {
         <div className="fixed-position">
           <Header />
           <Nav />
+          <Switch>
+            <Route exact path="/" />
+          </Switch>
           <DisplayBy />
         </div>
         <Switch />
-          <Route exact path="/api/reviews">
-            <Home></Home>
-          </Route>
-          <Route exact path="/api/reviews/:review_id">
-            <ChosenReview></ChosenReview>
-          </Route>
-          <Route exact path="/api/categories">
-            <Categories></Categories>
-          </Route>
-          <Route exact path="/api/reviews/:review_id/comments">
-            <ViewComments></ViewComments>
-          </Route>
+        <Route exact path="/api/reviews">
+          <Home></Home>
+        </Route>
+        <Route exact path="/api/reviews/:review_id">
+          <ChosenReview></ChosenReview>
+        </Route>
+        <Route exact path="/api/categories">
+          <Categories></Categories>
+        </Route>
+        <Route exact path="/api/reviews/:review_id/comments">
+          <ViewComments></ViewComments>
+        </Route>
       </div>
     </BrowserRouter>
   );

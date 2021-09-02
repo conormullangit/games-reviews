@@ -16,10 +16,10 @@ a:hover {
   border-radius: 5px;
 }
 
-ul {
+/* ul {
   display: flex;
   justify-content: center;
-}
+} */
 
 body {
   background: linear-gradient(

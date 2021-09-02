@@ -1,46 +1,4 @@
-.menu-btn {
-  margin-top: 10px;
-  margin-right: 290px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  border: 2px solid black;
-  border-radius: 10px;
-}
 
-.menu-btn__burger {
-  width: 30px;
-  height: 4px;
-  background: black;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
-}
-
-.menu-btn__burger::before,
-.menu-btn__burger::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background: rgb(0, 0, 0);
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba((255, 101, 47), 0.2);
-  transition: all 0.5s ease-in-out;
-}
-
-.menu-btn__burger::before {
-  transform: translateY(-10px);
-}
-
-.menu-btn__burger::after {
-  transform: translateY(10px);
-}
 
 .display-by {
   float: right;
@@ -49,7 +7,7 @@
 }
 .comp-box {
   border: 2px solid red;
-}
+} 
 
 .fixed-position {
   overflow: hidden;
@@ -57,3 +15,91 @@
   top: 5px;
   width: 90%;
 }
+
+.navbar {
+  background-color: grey;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: grey;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 10;
+  /* left: -100%; */
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 250ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: blue;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* span {
+  margin-left: 16px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
