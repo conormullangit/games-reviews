@@ -1,8 +1,13 @@
+
+
 const Categories = () => {
   return (
-    <div>
-      <p>Categories</p>
-    </div>
+    <>
+      <p>Select A Category</p>
+      <ul>
+        <li>Strategy</li>
+      </ul>
+    </>
   );
 };
 

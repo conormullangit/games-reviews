@@ -2,8 +2,8 @@
 
 .display-by {
   float: right;
-  width: 50vw;
-  /* padding: 20px 20px 20px 20px; */
+  /* width: 50vw; */
+  padding: 20px 20px 20px 20px;
 }
 .comp-box {
   border: 2px solid red;
