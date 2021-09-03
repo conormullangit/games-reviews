@@ -13,7 +13,6 @@ const ChosenReview = () => {
     fetch(`https://nc-reviews-server.herokuapp.com/api/reviews/${review_id}/comments`)
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data, "<-- DATA")
         setViewComments(data.comments);
 
       })
@@ -34,22 +33,25 @@ const ChosenReview = () => {
         <p>CATEGORY: {review.category}</p><br />
         <p>REVIEWER: {review.designer}</p><br />
         <p className="review-body">{review.review_body}</p>
+        <button className="nav-button">Up-Vote 👍<span> 0 </span></button><br />
+
         <ul>{viewComments.map((comment) => {
           return (
             <li key={comment.comment_id}>{comment.body}</li>
           )
         })}
         </ul>
-        {comments ? <p>{comments}</p> : null}
+
+        {/* {comments ? <p>{comments}</p> : null} */}
       </div>
 
 
 
-      <nav className="bottom-bar">
-        <button className="nav-button">Up-Vote 👍<span> 0 </span></button><br />
+      {/* <nav className="bottom-bar">
+
         <button className="nav-button" onClick={() => { setComments(true) }}>View Comments</button><br />
         <button className="nav-button">Leave Comment</button>
-      </nav>
+      </nav> */}
     </>
   );
 };

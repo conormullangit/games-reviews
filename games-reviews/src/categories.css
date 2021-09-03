@@ -1,0 +1,8 @@
+.category-overall {
+  border: 1px solid red;
+  margin: 30%;
+}
+
+ul li {
+  list-style: none;
+}

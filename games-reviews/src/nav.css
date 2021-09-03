@@ -37,14 +37,15 @@
   display: flex;
   justify-content: center;
   position: fixed;
-  top: 10;
-  /* left: -100%; */
+  top: 10px;
+  left: -100%;
   transition: 550ms;
 }
 
 .nav-menu.active {
   left: 0;
   transition: 250ms;
+  background-color: gray;
 }
 
 .nav-text {
@@ -74,6 +75,8 @@
 
 .nav-menu-items {
   width: 100%;
+  background-color: gray;
+
 }
 
 .navbar-toggle {
