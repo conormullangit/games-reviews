@@ -1,4 +1,4 @@
-import './nav.css';
+import '../styles/nav.css';
 
 const Header = () => {
   return (

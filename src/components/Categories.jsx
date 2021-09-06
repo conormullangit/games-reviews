@@ -1,4 +1,4 @@
-import './categories.css';
+import '../styles/categories.css';
 import { useEffect, useState } from "react";
 
 const Categories = () => {

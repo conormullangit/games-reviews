@@ -1,4 +1,4 @@
-import './chosen-review.css';
+import '../styles/chosen-review.css';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
