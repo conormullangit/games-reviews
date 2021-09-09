@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [reviews, setReviews] = useState([]);
-  
+
   useEffect(() => {
     return fetch("https://nc-reviews-server.herokuapp.com/api/reviews")
       .then((response) => response.json())
@@ -15,10 +15,8 @@ const Home = () => {
   return (
     <section className="list-section">
       <p>Welcome To NC Reviews.</p>
-      {/* <select name="category" id="category-name">
-        <option></option>
-      </select> */}
 
+      {/* Randomised review list for homepage reviews.sort(() => Math.random() - 0.5), */}
       <ul className="item-list">
         {reviews.map((review) => {
           return (

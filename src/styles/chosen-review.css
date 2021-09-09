@@ -33,7 +33,7 @@
 }
 
 .nav-button {
-  opacity: ;
+  opacity: 1;
 }
 
 .comment-section {
@@ -42,4 +42,12 @@
   align-items: center;
   align-content: center;
   padding: 15vh 10vw;
+}
+
+.author {
+  background: white;
+}
+
+.date {
+
 }

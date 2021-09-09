@@ -24,34 +24,35 @@ const ChosenReview = () => {
   }, [review_id]);
 
 
-  console.log(viewComments, "<--");
+
   return (
     <>
       <div className="chosen-review">
         <p className="chosen-title">{review.title}</p>
         <img src={review.review_img_url} className="single-item-image" alt={review.title} /><br />
         <p>CATEGORY: {review.category}</p><br />
-        <p>REVIEWER: {review.designer}</p><br />
+        <p>REVIEWED BY: {review.designer}</p><br />
         <p className="review-body">{review.review_body}</p>
-        <button className="nav-button">Up-Vote 👍<span> 0 </span></button><br />
+        <p><button className="nav-button">Up-Vote 👍</button>
+          <span> 0 </span>
+          <button className="nav-button">👎 Down-Vote</button></p><br />
 
         <ul>{viewComments.map((comment) => {
+          const d = new Date();
+          const year = d.getFullYear(comment.created_at);
+          const month = d.getMonth(comment.created_at) + 1;
+          const day = d.getDate(comment.created_at);
+          console.log(year, month, day, "<--Created");
           return (
-            <li key={comment.comment_id}>{comment.body}</li>
+            <>
+              <li key={comment.comment_id}><div className="author">{comment.author} wrote:</div>
+                <div className="date"> on {`${year}-${month}-${day}`}:</div></li>
+              <li>{comment.body}</li>
+            </>
           )
         })}
         </ul>
-
-        {/* {comments ? <p>{comments}</p> : null} */}
       </div>
-
-
-
-      {/* <nav className="bottom-bar">
-
-        <button className="nav-button" onClick={() => { setComments(true) }}>View Comments</button><br />
-        <button className="nav-button">Leave Comment</button>
-      </nav> */}
     </>
   );
 };

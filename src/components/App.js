@@ -12,16 +12,15 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <Switch />
         <div className="fixed-position">
           <Header />
           <Nav />
-          <Switch>
-            <Route exact path="/" />
-          </Switch>
+          <Route exact path="/api/reviews" />
           <DisplayBy />
         </div>
-        <Switch />
-        <Route exact path="/api/reviews">
+
+        <Route exact path="/reviews">
           <Home></Home>
         </Route>
         <Route exact path="/api/reviews/:review_id">
@@ -34,7 +33,7 @@ function App() {
           <ViewComments></ViewComments>
         </Route>
       </div>
-    </BrowserRouter>
+    </BrowserRouter >
   );
 }
 

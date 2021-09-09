@@ -5,7 +5,7 @@ import * as IoIcons from 'react-icons/io';
 export const NavSide = [
   {
     title: 'Home',
-    path: '/',
+    path: '/reviews',
     icon: <AiIcons.AiFillHome />,
     cName: 'nav-text'
   },
@@ -17,7 +17,7 @@ export const NavSide = [
   },
   {
     title: 'Reviews',
-    path: '/api/reviews',
+    path: '/reviews',
     icon: <AiIcons.AiFillEdit />,
     cName: 'nav-text'
   },
